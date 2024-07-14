@@ -195,6 +195,7 @@ header {
     }
     .main-first-title{
         width:100%;
+        text-align: center;
     }
     .main-first-description{
         width:100%;
@@ -204,11 +205,20 @@ header {
         width:100%;
         display:grid;
         grid-template-columns: repeat(2, 1fr);
-        
+        /* display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         */
     }
     .amount-container{
         display:grid;
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
+        /* display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    /*  */
     }
     .main-first-last{
         width:100%;
@@ -216,5 +226,51 @@ header {
         justify-content: center;
         align-items: center;
     }
- 
+    
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .main-first-sec{
+        display:flex;
+        flex-direction: column;
+    }
+    .main-first-container{
+        width:100%;
+    }
+    .main-first-title{
+        width:100%;
+        text-align: center;
+    }
+    .main-first-description{
+        width:100%;
+        margin-bottom: 50px;
+    }
+    .main-amount-container{
+        width:100%;
+        display:grid;
+        grid-template-columns: repeat(3, 2fr);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        /* display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         */
+    }
+    .amount-container{
+        display:grid;
+        /* grid-template-columns: repeat(2, 1fr); */
+        /* display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    /*  */
+    }
+    .main-first-last{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
