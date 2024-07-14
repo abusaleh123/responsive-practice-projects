@@ -132,6 +132,7 @@ header {
     color:#FFFFFF;
     display: flex;
     align-items: center;
+    margin-bottom:130px;
     
  
 }
@@ -152,7 +153,74 @@ header {
 
     
 }
+.second-sec-first-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.second-sec-main-title{
+    width:357px;
+    height: 54px;
+    font-size: 45px;
+    font-weight: bold;
+    color:#121212;
+    margin-bottom:20px;
+}
+.second-sec-description{
+    width:691px;
+    height:56px;
+    font-size:18px;
+    color:#707070;
+    text-align: center;
 
+}
+
+.second-sec-card{
+    display:flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap:24px;
+
+}
+.second-sec-first-card{
+    width:360px;
+    height:352px;
+    border-radius: 5px;;
+}
+.card-photo{
+    width:58.13px;
+    height:49.77px;
+    margin-bottom:31px;
+    margin-top:63px;
+    margin-left:23px;
+}
+.card-main-title{
+    width:250px;
+    height: 36px;
+    font-size: 24px;
+    font-weight: 700;
+    color:#121212;
+    margin-bottom:16px;
+    margin-left:23px;
+}
+.card-description{
+    width:330px;
+    height: 101px;
+    font-size: 16px;
+    color:#707070;
+    margin-top:0px;
+    margin-left:23px;
+}
+.light-tomato{
+    background-color: #f0a9a9;
+}
+.light-blue{
+    background-color: #abd9df;
+}
+.bisque{
+    background-color: bisque;
+}
 @media screen and (max-width: 576px) {
     .header {
         display: flex;
@@ -211,22 +279,6 @@ header {
         align-items: center;
          */
     }
-    .amount-container{
-        display:grid;
-        /* grid-template-columns: repeat(2, 1fr); */
-        /* display:flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    /*  */
-    }
-    .main-first-last{
-        width:100%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
 }
 @media screen and (min-width: 576px) and (max-width: 992px){
     .main-first-sec{
@@ -273,4 +325,54 @@ header {
         align-items: center;
     }
     
+}
+@media screen  and (max-width:576px){
+    .second-sec-card{
+        display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    }
+    .second-sec-description{
+        width:90%;
+        margin-bottom:30px;
+    }
+    .card-main-title{
+        width:100%;
+        margin:0px;
+        margin-bottom:16px;
+    }
+    .card-description{
+        width:100%;
+        margin:0;
+    }
+    .card-photo{
+        margin-bottom:31px;
+        margin-top:63px;
+    }
+}
+@media screen  and (min-width:577px) and (max-width:992px){
+    .second-sec-card{
+        display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    width:100%;
+    }
+    .second-sec-description{
+        width:90%;
+        margin-bottom:30px;
+    }
+    .card-main-title{
+        width:100%;
+        margin:0px;
+        margin-bottom:16px;
+    }
+    .card-description{
+        width:100%;
+        margin:0;
+    }
+    .card-photo{
+        margin-bottom:31px;
+        margin-top:63px;
+    }
 }
